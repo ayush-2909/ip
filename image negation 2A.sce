@@ -1,0 +1,12 @@
+clc;
+clear all;
+i=imread("C:\Users\Dell\Downloads\cameraman.jpg");
+a=double(i);
+c=255;
+b=c-a;
+subplot(2,2,1);
+imshow(uint8(a));
+title('Original Image');
+subplot(2,2,2);
+imshow(uint8(b));
+title('Image negative');
